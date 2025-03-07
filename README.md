@@ -61,13 +61,12 @@ Large language models often exhibit linguistic biases due to training data imbal
 ## Setup and Installation (for Local Use)
 
 ### Create a Virtual Environment (Optional but Recommended)
-     ```bash
-    
+        
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ## Install the Required Dependencies
-    ``bash
+    
     pip install -r requirements.txt
    
  Then, run the code.
