@@ -92,7 +92,7 @@ Large language models often exhibit linguistic biases due to training data imbal
 - Provide a summary comparison between corresponding categories.
 
 # License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/your_username/your_repo/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 # Contributing
 Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions, improvements, or encounter any problems.
