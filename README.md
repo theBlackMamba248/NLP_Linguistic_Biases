@@ -37,8 +37,6 @@ Large language models often exhibit linguistic biases due to training data imbal
 - [Transformers](https://github.com/huggingface/transformers)
 - A GPU is recommended (especially for running the GPT-J 6B model)
 
-# NLP Linguistic Biases Analysis using GPT-J 6B
-
 ## Model Description
 
 - **GPT-J 6B** is a transformer model trained using Ben Wang's Mesh Transformer JAX. "GPT-J" refers to the class of model, while "6B" represents the number of trainable parameters.
