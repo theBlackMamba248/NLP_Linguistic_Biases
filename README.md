@@ -39,7 +39,7 @@ Large language models often exhibit linguistic biases due to training data imbal
 
 ## Model Description
 
-- **GPT-J 6B** is a transformer model trained using Ben Wang's Mesh Transformer JAX. "GPT-J" refers to the class of model, while "6B" represents the number of trainable parameters.
+- [**GPT-J 6B**](https://huggingface.co/EleutherAI/gpt-j-6b) is a transformer model trained using Ben Wang's Mesh Transformer JAX. "GPT-J" refers to the class of model, while "6B" represents the number of trainable parameters.
 - The model consists of 28 layers with a model dimension of 4096, and a feedforward dimension of 16384.
 - The model dimension is split into 16 heads, each with a dimension of 256.
 - Rotary Position Embedding (RoPE) is applied to 64 dimensions of each head.
