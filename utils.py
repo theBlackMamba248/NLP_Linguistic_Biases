@@ -1,6 +1,21 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
+# def load_model_and_tokenizer(model_name="EleutherAI/gpt-j-6B", offload_folder="./offload"):
+#     """
+#     Loads the model and tokenizer from Hugging Face using the given model name.
+#     The model is loaded on GPU if available, with torch.float16 for efficiency.
+#     """
+#     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#     tokenizer = AutoTokenizer.from_pretrained(model_name)
+#     model = AutoModelForCausalLM.from_pretrained(
+#         model_name,
+#         device_map="auto",
+#         torch_dtype=torch.float16,
+#         offload_folder=offload_folder
+#     )
+#     model.eval()
+#     return model, tokenizer, device
 def load_model_and_tokenizer(model_name="EleutherAI/gpt-j-6B", offload_folder="./offload"):
     """
     Loads the model and tokenizer from Hugging Face using the given model name.
@@ -10,10 +25,9 @@ def load_model_and_tokenizer(model_name="EleutherAI/gpt-j-6B", offload_folder=".
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        device_map="auto",
-        torch_dtype=torch.float16,
-        offload_folder=offload_folder
+        torch_dtype=torch.float16 if device.type == "cuda" else torch.float32,
     )
+    model.to(device)
     model.eval()
     return model, tokenizer, device
 
@@ -27,6 +41,20 @@ def compute_log_likelihood(text, model, tokenizer, device):
         loss = outputs.loss
     total_ll = -loss.item() * input_ids.size(1)
     return total_ll
+
+def compute_bias_factor(text, tokenizer):
+    """
+    Computes tokenization errors for Hindi text by counting subword splits.
+    Split indicator: Tokens *without* "Ġ" (except the first token).
+    """
+    tokens = tokenizer.tokenize(text)
+    if not tokens:
+        return 0.0
+    split_errors = 0
+    for i in range(1, len(tokens)):  # Skip first token
+        if not tokens[i].startswith("Ġ"):
+            split_errors += 1
+    return split_errors / len(tokens)  # Normalize by total tokens
 
 def clean_generated_text(prompt, generated_text):
     """

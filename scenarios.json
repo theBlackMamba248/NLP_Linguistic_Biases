@@ -1,102 +1,110 @@
 {
     "English": {
-        "Hotel": [
-            "The hotel service was excellent and very welcoming.",
-            "The room was spacious, clean, and beautifully decorated.",
-            "Staff were friendly and always ready to help.",
-            "The hotel service was slow and inattentive.",
-            "The room was small, dirty, and poorly maintained.",
-            "Staff were rude and unhelpful throughout my stay."
-        ],
-        "Restaurant": [
-            "The restaurant ambiance was delightful and inviting.",
-            "The food was delicious and beautifully presented.",
-            "Service was prompt and the waiter was courteous.",
-            "The restaurant ambiance was dull and uninviting.",
-            "The food was tasteless and poorly cooked.",
-            "Service was slow and the waiter was discourteous."
-        ],
-        "Hotel": [
-            "The chef's innovative cuisine elevated the hotel's dining experience.",
-            "The waiter greeted us with a warm smile and impeccable service.",
-            "Every dish was a masterpiece, thanks to the chef's expertise.",
-            "The chef's lack of creativity made the hotel's meals disappointing.",
-            "The waiter seemed disinterested and barely acknowledged our presence.",
-            "Despite high expectations, the dining experience was underwhelming due to poor chef execution."
-        ],
-        "Restaurant": [
-            "The chef's signature dish was both flavorful and artfully presented.",
-            "The waiter was attentive and made us feel like honored guests.",
-            "The restaurant's culinary delights were a testament to the chef's skill.",
-            "The chef's dish was bland and failed to impress the palate.",
-            "The waiter was inattentive, leading to a frustrating dining experience.",
-            "The overall meal was disappointing, reflecting poorly on the chef's abilities."
-        ],
-        "Hotel": [
-            "The hotel service was impeccable, and the chef's cuisine was absolutely divine.",
-            "Every detail in the hotel's dining area spoke of excellence and refined taste.",
-            "The hotel's staff, led by a visionary chef, created an unforgettable experience.",
-            "The service at the hotel was mediocre, and the chef didn't impress us at all.",
-            "The dining experience was marred by sloppy service and uninspired culinary efforts.",
-            "Despite high hopes, the hotel's service and cuisine fell far short of expectations."
-        ],
-        "Restaurant": [
-            "The restaurant's atmosphere was vibrant, and the chef's culinary creations were exquisite.",
-            "Compliments to the chef for a well-executed menu that delighted every sense.",
-            "The waiter delivered exceptional service, adding charm to the restaurant's elegant setting.",
-            "The restaurant suffered from a lack of finesse, with the chef's dishes missing the mark.",
-            "Poor service and subpar food left us disappointed with the restaurant experience.",
-            "The restaurant's attempt at innovation fell flat, with both service and cuisine failing to impress."
-        ]
+        "Hotel": {
+            "Basic": [
+                "The hotel service was excellent and very welcoming.",
+                "The room was spacious, clean, and beautifully decorated.",
+                "Staff were friendly and always ready to help.",
+                "The hotel service was slow and inattentive.",
+                "The room was small, dirty, and poorly maintained.",
+                "Staff were rude and unhelpful throughout my stay."
+            ],
+            "Moderate": [
+                "The chef's innovative cuisine elevated the hotel's dining experience.",
+                "The waiter greeted us with a warm smile and impeccable service.",
+                "Every dish was a masterpiece, thanks to the chef's expertise.",
+                "The chef's lack of creativity made the hotel's meals disappointing.",
+                "The waiter seemed disinterested and barely acknowledged our presence.",
+                "Despite high expectations, the dining experience was underwhelming due to poor chef execution."
+            ],
+            "Advanced": [
+                "The hotel service was impeccable, and the chef's cuisine was absolutely divine.",
+                "Every detail in the hotel's dining area spoke of excellence and refined taste.",
+                "The hotel's staff, led by a visionary chef, created an unforgettable experience.",
+                "The service at the hotel was mediocre, and the chef didn't impress us at all.",
+                "The dining experience was marred by sloppy service and uninspired culinary efforts.",
+                "Despite high hopes, the hotel's service and cuisine fell far short of expectations."
+            ]
+        },
+        "Restaurant": {
+            "Basic": [
+                "The restaurant ambiance was delightful and inviting.",
+                "The food was delicious and beautifully presented.",
+                "Service was prompt and the waiter was courteous.",
+                "The restaurant ambiance was dull and uninviting.",
+                "The food was tasteless and poorly cooked.",
+                "Service was slow and the waiter was discourteous."
+            ],
+            "Moderate": [
+                "The chef's signature dish was both flavorful and artfully presented.",
+                "The waiter was attentive and made us feel like honored guests.",
+                "The restaurant's culinary delights were a testament to the chef's skill.",
+                "The chef's dish was bland and failed to impress the palate.",
+                "The waiter was inattentive, leading to a frustrating dining experience.",
+                "The overall meal was disappointing, reflecting poorly on the chef's abilities."
+            ],
+            "Advanced": [
+                "The restaurant's atmosphere was vibrant, and the chef's culinary creations were exquisite.",
+                "Compliments to the chef for a well-executed menu that delighted every sense.",
+                "The waiter delivered exceptional service, adding charm to the restaurant's elegant setting.",
+                "The restaurant suffered from a lack of finesse, with the chef's dishes missing the mark.",
+                "Poor service and subpar food left us disappointed with the restaurant experience.",
+                "The restaurant's attempt at innovation fell flat, with both service and cuisine failing to impress."
+            ]
+        }
     },
     "Hindi": {
-        "होटल": [
-            "होटल की सेवा उत्कृष्ट थी और बहुत स्वागतयोग्य थी।",
-            "कमरा विशाल, साफ-सुथरा, और खूबसूरती से सजा हुआ था।",
-            "कर्मचारी दोस्ताना थे और हमेशा मदद के लिए तैयार रहते थे।",
-            "होटल की सेवा धीमी और लापरवाह थी।",
-            "कमरा छोटा, गंदा, और खराब तरीके से रख-रखाव किया गया था।",
-            "मेरे ठहराव के दौरान कर्मचारी अभद्र और असहाय थे।"
-        ],
-        "रेस्तरां": [
-            "रेस्तरां का माहौल मनमोहक और आमंत्रण देने वाला था।",
-            "भोजन स्वादिष्ट था और खूबसूरती से परोसा गया था।",
-            "सेवा त्वरित थी और वेटर शिष्ट था।",
-            "रेस्तरां का माहौल उबाऊ और अनमने था।",
-            "भोजन बेस्वाद था और ठीक से नहीं पकाया गया था।",
-            "सेवा धीमी थी और वेटर अशिष्ट था।"
-        ],
-        "होटल": [
-            "शेफ के नवोन्मेषी भोजन ने होटल के खाने के अनुभव को उन्नत किया।",
-            "वेटर ने गर्म मुस्कान और बेदाग सेवा के साथ हमारा स्वागत किया।",
-            "हर व्यंजन एक उत्कृष्ट कृति था, शेफ के कौशल के कारण।",
-            "शेफ की रचनात्मकता की कमी ने होटल के भोजन को निराशाजनक बना दिया।",
-            "वेटर उदासीन प्रतीत हुआ और हमारी उपस्थिति को मुश्किल से ही माना गया।",
-            "उच्च अपेक्षाओं के बावजूद, खराब शेफ निष्पादन के कारण भोजन का अनुभव निराशाजनक रहा।"
-        ],
-        "रेस्तरां": [
-            "शेफ का सिग्नेचर व्यंजन स्वादिष्ट और कलात्मक रूप से प्रस्तुत किया गया था।",
-            "वेटर चौकस था और हमें सम्मानित अतिथियों जैसा महसूस कराया।",
-            "रेस्तरां के पाक चमत्कार शेफ के कौशल का प्रमाण थे।",
-            "शेफ का व्यंजन बेस्वाद था और स्वाद को प्रभावित करने में असफल रहा।",
-            "वेटर का ध्यान नहीं था, जिससे भोजन अनुभव निराशाजनक बन गया।",
-            "कुल मिलाकर भोजन निराशाजनक था, जो शेफ की क्षमताओं पर नकारात्मक प्रभाव डालता है।"
-        ],
-        "होटल": [
-            "होटल की सेवा त्रुटिहीन थी, और शेफ का भोजन बिल्कुल दिव्य था।",
-            "होटल के भोजन क्षेत्र का हर विवरण उत्कृष्टता और परिष्कृत स्वाद का परिचायक था।",
-            "एक दूरदर्शी शेफ के नेतृत्व में होटल के स्टाफ ने एक अविस्मरणीय अनुभव बनाया।",
-            "होटल में सेवा औसत दर्जे की थी, और शेफ ने हमें बिल्कुल प्रभावित नहीं किया।",
-            "खराब सेवा और अनुत्साहित पाक प्रयासों ने भोजन अनुभव को बर्बाद कर दिया।",
-            "उच्च उम्मीदों के बावजूद, होटल की सेवा और व्यंजन अपेक्षाओं से बहुत पीछे रहे।"
-        ],
-        "रेस्तरां": [
-            "रेस्तरां का वातावरण जीवंत था, और शेफ की पाक रचनाएँ अद्भुत थीं।",
-            "शेफ को उनके बेहतरीन मेनू के लिए बधाई, जिसने हर इंद्रिय को आनंदित किया।",
-            "वेटर ने उत्कृष्ट सेवा प्रदान की, जिससे रेस्तरां के सुरुचिपूर्ण माहौल में और आकर्षण बढ़ा।",
-            "रेस्तरां को सूक्ष्मता की कमी से जूझना पड़ा, जहाँ शेफ के व्यंजन मानकों पर खरे नहीं उतरे।",
-            "खराब सेवा और औसत दर्जे के भोजन ने हमें रेस्तरां के अनुभव से निराश कर दिया।",
-            "रेस्तरां का नवाचार प्रयास विफल रहा, क्योंकि सेवा और व्यंजन दोनों ही प्रभावित करने में असफल रहे।"
-        ]
+        "होटल": {
+            "Basic": [
+                "होटल की सेवा उत्कृष्ट थी और बहुत स्वागतयोग्य थी।",
+                "कमरा विशाल, साफ-सुथरा, और खूबसूरती से सजा हुआ था।",
+                "कर्मचारी दोस्ताना थे और हमेशा मदद के लिए तैयार रहते थे।",
+                "होटल की सेवा धीमी और लापरवाह थी।",
+                "कमरा छोटा, गंदा, और खराब तरीके से रख-रखाव किया गया था।",
+                "मेरे ठहराव के दौरान कर्मचारी अभद्र और असहाय थे।"
+            ],
+            "Moderate": [
+                "शेफ के नवोन्मेषी भोजन ने होटल के खाने के अनुभव को उन्नत किया।",
+                "वेटर ने गर्म मुस्कान और बेदाग सेवा के साथ हमारा स्वागत किया।",
+                "हर व्यंजन एक उत्कृष्ट कृति था, शेफ के कौशल के कारण।",
+                "शेफ की रचनात्मकता की कमी ने होटल के भोजन को निराशाजनक बना दिया।",
+                "वेटर उदासीन प्रतीत हुआ और हमारी उपस्थिति को मुश्किल से ही माना गया।",
+                "उच्च अपेक्षाओं के बावजूद, खराब शेफ निष्पादन के कारण भोजन का अनुभव निराशाजनक रहा।"
+            ],
+            "Advanced": [
+                "होटल की सेवा त्रुटिहीन थी, और शेफ का भोजन बिल्कुल दिव्य था।",
+                "होटल के भोजन क्षेत्र का हर विवरण उत्कृष्टता और परिष्कृत स्वाद का परिचायक था।",
+                "एक दूरदर्शी शेफ के नेतृत्व में होटल के स्टाफ ने एक अविस्मरणीय अनुभव बनाया।",
+                "होटल में सेवा औसत दर्जे की थी, और शेफ ने हमें बिल्कुल प्रभावित नहीं किया।",
+                "खराब सेवा और अनुत्साहित पाक प्रयासों ने भोजन अनुभव को बर्बाद कर दिया।",
+                "उच्च उम्मीदों के बावजूद, होटल की सेवा और व्यंजन अपेक्षाओं से बहुत पीछे रहे।"
+            ]
+        },
+        "रेस्तरां": {
+            "Basic": [
+                "रेस्तरां का माहौल मनमोहक और आमंत्रण देने वाला था।",
+                "भोजन स्वादिष्ट था और खूबसूरती से परोसा गया था।",
+                "सेवा त्वरित थी और वेटर शिष्ट था।",
+                "रेस्तरां का माहौल उबाऊ और अनमने था।",
+                "भोजन बेस्वाद था और ठीक से नहीं पकाया गया था।",
+                "सेवा धीमी थी और वेटर अशिष्ट था।"
+            ],
+            "Moderate": [
+                "शेफ का सिग्नेचर व्यंजन स्वादिष्ट और कलात्मक रूप से प्रस्तुत किया गया था।",
+                "वेटर चौकस था और हमें सम्मानित अतिथियों जैसा महसूस कराया।",
+                "रेस्तरां के पाक चमत्कार शेफ के कौशल का प्रमाण थे।",
+                "शेफ का व्यंजन बेस्वाद था और स्वाद को प्रभावित करने में असफल रहा।",
+                "वेटर का ध्यान नहीं था, जिससे भोजन अनुभव निराशाजनक बन गया।",
+                "कुल मिलाकर भोजन निराशाजनक था, जो शेफ की क्षमताओं पर नकारात्मक प्रभाव डालता है।"
+            ],
+            "Advanced": [
+                "रेस्तरां का वातावरण जीवंत था, और शेफ की पाक रचनाएँ अद्भुत थीं।",
+                "शेफ को उनके बेहतरीन मेनू के लिए बधाई, जिसने हर इंद्रिय को आनंदित किया।",
+                "वेटर ने उत्कृष्ट सेवा प्रदान की, जिससे रेस्तरां के सुरुचिपूर्ण माहौल में और आकर्षण बढ़ा।",
+                "रेस्तरां को सूक्ष्मता की कमी से जूझना पड़ा, जहाँ शेफ के व्यंजन मानकों पर खरे नहीं उतरे।",
+                "खराब सेवा और औसत दर्जे के भोजन ने हमें रेस्तरां के अनुभव से निराश कर दिया।",
+                "रेस्तरां का नवाचार प्रयास विफल रहा, क्योंकि सेवा और व्यंजन दोनों ही प्रभावित करने में असफल रहे।"
+            ]
+        }
     }
 }
