@@ -1,5 +1,5 @@
 import json
-from utils import load_model_and_tokenizer, compute_log_likelihood
+from utils import load_model_and_tokenizer, compute_log_likelihood, compute_bias_factor
 
 def load_scenarios(filename="scenarios.json"):
     """
@@ -13,6 +13,7 @@ def analyze_scenarios(scenarios, language, model, tokenizer, device):
     """
     Computes log likelihood scores for each scenario text and prints the results.
     """
+
     print(f"\n----- Analyzing scenarios in {language} -----")
     results = {}
     for scenario, texts in scenarios.items():
@@ -24,6 +25,13 @@ def analyze_scenarios(scenarios, language, model, tokenizer, device):
             scenario_results.append(ll)
         results[scenario] = scenario_results
         print("-" * 50)
+
+    for text in texts:
+        ll = compute_log_likelihood(text, model, tokenizer, device)
+        beta = compute_bias_factor(text, tokenizer)
+        adjusted_ll = ll - beta  # B(s_i^L) = LL - β
+        print(f"Text: {text}\nRaw LL: {ll:.2f}, β: {beta:.2f}, Adjusted LL: {adjusted_ll:.2f}\n")
+        scenario_results.append(adjusted_ll)
     return results
 
 def main():
