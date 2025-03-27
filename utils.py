@@ -16,7 +16,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 #     )
 #     model.eval()
 #     return model, tokenizer, device
-def load_model_and_tokenizer(model_name="EleutherAI/gpt-j-6B", offload_folder="./offload"):
+def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
     """
     Loads the model and tokenizer from Hugging Face using the given model name.
     The model is loaded on GPU if available, with torch.float16 for efficiency.
