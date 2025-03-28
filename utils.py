@@ -4,7 +4,7 @@ from datasets import evaluate
 import numpy as np
 
 
-    bleu_metric = evaluate.load("bleu")
+bleu_metric = evaluate.load("bleu")
 
 
 def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
