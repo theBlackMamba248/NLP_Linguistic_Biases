@@ -1,7 +1,9 @@
 import torch
+import nltk
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from bert_score import score as bert_score
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+from nltk.tokenize import word_tokenize
 from tqdm import tqdm
 import json
 import pandas as pd
@@ -9,7 +11,7 @@ import numpy as np
 from datasets import load_metric
 
 # Download NLTK data
-import nltk
+
 nltk.download('punkt')
 
 bleu_metric = load_metric("bleu")
