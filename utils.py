@@ -1,6 +1,3 @@
-# Install dependencies
-!pip install transformers torch datasets bert-score nltk tqdm
-
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from bert_score import score as bert_score
