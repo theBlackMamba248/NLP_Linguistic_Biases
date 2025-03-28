@@ -28,11 +28,15 @@ def load_model_and_tokenizer(model_name="gpt2", device="cuda"):
     ).to(device)
     model.eval()
     return model, tokenizer, device
+    
 def compute_bleu(reference, candidate):
    
     results = bleu_metric.compute(
         predictions=[candidate.split()],
         references=[[reference.split()]]
+        )
+    return results["bleu"
+        
 def batch_log_likelihood(texts, model, tokenizer, device, batch_size=8):
     """Compute log-likelihood for a batch of texts"""
     input_ids = tokenizer(
