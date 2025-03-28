@@ -1,13 +1,15 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from datasets import load_metric
+from datasets import load_metric, evaluate
 import numpy as np
 
 # Initialize BLEU metric
 try:
-    bleu_metric = load_metric("bleu")
+    # New way (preferred)
+    bleu_metric = evaluate.load("bleu")
 except:
-    bleu_metric = None
+    # Fallback to old way
+    bleu_metric = load_metric("bleu")
 
 def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
     """Loads model and tokenizer"""
@@ -23,16 +25,11 @@ def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
 
 def compute_bleu(reference, candidate):
     """Computes BLEU score between texts"""
-    if bleu_metric is None:
-        return 0.0  # Fallback if metric couldn't load
-    try:
-        results = bleu_metric.compute(
-            predictions=[candidate.split()],
-            references=[[reference.split()]]
-        )
-        return results.get("bleu", 0.0)
-    except:
-        return 0.0
+    results = bleu_metric.compute(
+        predictions=[candidate.split()],
+        references=[[reference.split()]]
+    )
+    return results["bleu"]
 
 def compute_log_likelihood(text, model, tokenizer, device):
     """Computes log likelihood for text"""
