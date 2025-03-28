@@ -1,13 +1,8 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from datasets import evaluate
-import numpy as np
+import evaluate  # This is the correct import for metrics
 
-
-bleu_metric = evaluate.load("bleu")
-
-
-def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
+def load_model_and_tokenizer(model_name="gpt2"):
     """Loads model and tokenizer"""
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -21,7 +16,8 @@ def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
 
 def compute_bleu(reference, candidate):
     """Computes BLEU score between texts"""
-    results = bleu_metric.compute(
+    bleu = evaluate.load("bleu")
+    results = bleu.compute(
         predictions=[candidate.split()],
         references=[[reference.split()]]
     )
