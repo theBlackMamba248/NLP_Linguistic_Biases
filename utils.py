@@ -6,10 +6,13 @@ from tqdm import tqdm
 import json
 import pandas as pd
 import numpy as np
+from datasets import load_metric
 
 # Download NLTK data
 import nltk
 nltk.download('punkt')
+
+bleu_metric = load_metric("bleu")
 
 # --------------------------------------------------
 # 1. Batch-Optimized Utils (utils.py)
@@ -23,7 +26,11 @@ def load_model_and_tokenizer(model_name="gpt2", device="cuda"):
     ).to(device)
     model.eval()
     return model, tokenizer, device
-
+def compute_bleu(reference, candidate):
+   
+    results = bleu_metric.compute(
+        predictions=[candidate.split()],
+        references=[[reference.split()]]
 def batch_log_likelihood(texts, model, tokenizer, device, batch_size=8):
     """Compute log-likelihood for a batch of texts"""
     input_ids = tokenizer(
