@@ -1,15 +1,11 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from datasets import load_metric, evaluate
+from datasets import evaluate
 import numpy as np
 
-# Initialize BLEU metric
-try:
-    # New way (preferred)
+
     bleu_metric = evaluate.load("bleu")
-except:
-    # Fallback to old way
-    bleu_metric = load_metric("bleu")
+
 
 def load_model_and_tokenizer(model_name="gpt2", offload_folder="./offload"):
     """Loads model and tokenizer"""
